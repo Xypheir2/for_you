@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You Maem</title>
+
+    <!-- Tab color -->
+    <meta name="theme-color" content="#6c5ce7"> 
+
+    <!-- Logo -->
+    <link rel="icon" href="images/duckyy.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        /* === VIDEO OVERLAY === */
+        #video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3); /* optional dim behind */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 1s ease;
+            z-index: 100;
+        }
+
+        #video-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        #video-overlay video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Notification div -->
+        <div id="notification" class="notification">
+            🔔 You Received a Letter
+        </div>
+        
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <!-- Letter content -->
+            
+                <p><strong>Haii Yamm!</strong></p>
+
+                  <p><em>EYY EYY EYY</em></p>
+
+                <p style="margin:0;"><em>Okay.</em></p>
+                <p></p>
+                <p style="margin:0;">Seryus mode muna tayo.</p>
+                <p></p>
+
+                <p style="margin:0;">Well... Ig you can consider this as my last gift for you this year.</p>
+                <p style="margin:0;">Hopefully may sense pa ako para I greet ka later 😭</p>
+
+                <p><em>*ahem*</em></p>
+
+                <p style="margin:0;">I can’t send you a letter physically,</p>
+                <p style="margin:0;">so I just decided to make one for you virtually.</p>
+                <p style="margin:0;">I don’t really express things well, but I wanted you to know that you made a difference this year just by being in it. 😝</p>
+
+                <p>(huiii hala siyaaa)</p>
+
+                <p>Tbh I never expected to meet you this year, let alone become this close. Turns out, being a little “sipsip” sa Discord had its perks hahaha. But seriously, I don’t regret a single bit of it. I’m really glad I stepped up, because if I didn’t, we probably wouldn’t be here by now. Never did I expect na makakahanap ako randomly ng someone na ka vibes ko, at ng mas demonyo pa sa akin-</p>
+
+                <p>emee!</p>
+
+                <p>Grabe haaa sobrang giving ni God sakin.</p>
+
+                <!-- Photo object -->
+                <div class="spotify-code">
+                    <img src="images/image1.jpg">
+                </div>
+
+                <p>I really appreciate how easy things are with you, for letting me just be me. Thank you for being someone I can talk to without pretending or filtering myself too much. You made things feel lighter this year, even on days na pagod na pagod ako. Kahit random usapan lang, bardagulan, or kalokohan. Somehow, those small things ended up meaning a lot to me and it somehow mattered to me more than you probably realize. Ig what I’m trying to say is thank you for being you and for being here.</p>
+
+                <p>Thank you for being my supporter, whether it’s in games or at school. Thank you for being my ride or die, my duo, for playing games with me <em>(kahit ako naman talaga dahilan kung bakit talo 😝)</em>. Thank you for all the chikas we shared, for the morning/night greetings, for listening whenever I had something to say, for laughing at my corny jokes, for the random teasings, for matching my energy, for your top tier recos, and for choosing to stay kahit busy or pagod ka. Ano pa ba… naubusan nako ng I sasabihin behhh.. basta marami pa! More than I can put into words!</p>
+
+                <p>Basta anyways, somehow you always knew how to make me smile.</p>
+
+                <p><em>Yieee! Presence falang fo gift ko this year.</em></p>
+
+                <!-- Photo object -->
+                <div class="spotify-code">
+                    <img src="images/image2.jpg">
+                </div>
+
+                <p>Anyways, if you ever need help with anything I’m always just one chat away. I won’t hesitate to help, and don’t hesitate to message me too.</p>
+
+                <p>And halaaa, di ko pa natapos yung recommendations na binigay mo beh- but that doesn't mean that I won't be watching them next year hehe. Keep them coming na lang sino ba naman tatanggi sa mga kavadingan?</p>
+
+                <!-- Photo object -->
+                <div class="spotify-code">
+                    <img src="images/image3.jpg">
+                </div>
+
+                <p>For the new year, I hope you continue being the fun and bright person you are.</p>
+
+                
+                <p style="margin-top:20px;"><em>the end..</em></p>
+
+                <p style="margin-top:20px;"><em>P.S. wag ka na mag-scroll… tafos na 'to.</em></p>
+
+                <div class="spacer-small"></div>
+
+                <p><em>ahh teka… wala na nga beh.</em></p>
+
+                <div class="spacer-medium"></div>
+
+                <p><em>hala siya… talagang wala na nga.</em></p>
+
+                <div class="spacer-big"></div>
+
+                <p><em>hmm… kulit neto.</em></p>
+
+                <div class="spacer-big"></div>
+
+                <p><em>sigi na nga pagbigyan… 🙄</em></p>
+
+                <div class="spacer-medium"></div>
+
+                <p><em>bat nakulangan ka pa?</em></p>
+
+                <div class="spacer-big"></div>
+
+                <p><em>ohhh… sigii scroll ka ulit 😏</em></p>
+
+                <div class="spacer-big"></div>
+
+                <!-- Photo object -->
+                     <div class="spotify-code">
+                            <img src="images/image5.jpg">
+                        </div>
+
+                <p><em>blehhh kala mo nohh- </em></p>
+
+                <div class="spacer-big"></div>
+
+                                <!-- Photo object -->
+                     <div class="spotify-code">
+                            <img src="images/image6.jpg">
+                        </div>
+
+                <p><em>HAHAHAHA sigi last na to. scroll mo na </em></p>
+
+                <div class="spacer-big"></div>
+
+
+                <p>
+                I know it wasn’t a perfect year, but it felt luckier because I got to know you. 
+                No matter what this year brings, I hope we keep talking, laughing, and being 
+                ourselves around each other.
+                </p>
+
+                <p> I’d really love to keep you in my life, if that’s okay with you.
+                </p>
+
+
+                <p><strong>Happy New Year Yammie! 🤍</strong></p>
+
+                 <p>~ Nessa</p>
+                        <div class="spotify-code">
+                            <img src="gif/dog.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="envelope-shadow"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- === VIDEO OVERLAY === -->
+    <div id="video-overlay">
+        <video autoplay muted loop id="fireworks-video">
+            <source src="videos/fireworks.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        // Hide notification after 4s
+        window.onload = function() {
+            const notification = document.getElementById('notification');
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 4000);
+        };
+
+        // Open the letter when the circle is clicked
+        const circle = document.querySelector('.circle');
+        const letter = document.querySelector('.letter');
+
+        circle.addEventListener('click', function () {
+            letter.classList.add('show');
+        });
+
+        const envelopeWrapper = document.querySelector('.envelope-wrapper');
+        envelopeWrapper.addEventListener('click', () => {
+            envelopeWrapper.classList.toggle('flap');
+        });
+
+        // === VIDEO OVERLAY ON SCROLL BOTTOM ===
+        const videoOverlay = document.getElementById('video-overlay');
+
+        letter.addEventListener('scroll', () => {
+            if (letter.scrollTop + letter.clientHeight >= letter.scrollHeight - 5) {
+                videoOverlay.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
